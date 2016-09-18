@@ -1,7 +1,8 @@
 # Netcat
 
 ## I. Introduction
-Netcat est décrit dans son manuel ainsi : "[...] used for just about anything under the sun". Veritable couteau suisse par sa flexibilité, il est un outil incontournable.
+Netcat est décrit dans son manuel ainsi : "[...] used for just about anything under the sun".  
+Veritable couteau suisse par sa flexibilité, il est un outil incontournable.
 
 ## II. Fingerprint HTTP
 ```{r, engine='bash'}
