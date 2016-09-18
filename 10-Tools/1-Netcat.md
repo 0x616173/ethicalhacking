@@ -8,7 +8,7 @@ Netcat est décrit dans son manuel ainsi : "[...] used for just about anything u
 aas@ubuntu:~$ echo "HEAD / HTTP/1.0" | nc abcde.fr 80
 HTTP/1.1 400 Bad Request
 Date: Sun, 18 Sep 2016 15:59:39 GMT
-Server: __Apache/2.2.3 (CentOS)__
+Server: **Apache/2.2.3 (CentOS)**
 Connection: close
 Content-Type: text/html; charset=iso-8859-1
 ```
