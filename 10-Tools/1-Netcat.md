@@ -64,5 +64,5 @@ aas@ubuntu:~$ nc -l 1234 < vuln
 ```
 Dans un second shell :
 ```{r, engine='bash'}
-aas@ubuntu:~$ nc localhost 1234 < /tmp/vuln
+aas@ubuntu:~$ nc localhost 1234 > /tmp/vuln
 ```
