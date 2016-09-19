@@ -50,15 +50,16 @@ aas@ubuntu:~$ nmap -sA 192.168.1.20
 ```
 
 ## VII. L'IdleScan
-L'idée est d'utiliser est de faire scanner une machine par une machine zombie à notre place. L'idée est de se faire passer pour le zombie, la victime repond au zombie, et on check si le zombie à reçu quelque chose.
+L'idée est de faire scanner une machine par une machine zombie à notre place.
 * Je trouve un zombie avec un port TCP ouvert
 * Je lui envoi une demande de connexion avec un SYN
 * Il me répond avec SYN+ACK et je lis dans l'en-tête de couche 3 son IPID (eg 100)
 * J'envoi un SYN à la victime avec comme IP source celle du zombie
+
 Je re-SYN mon zombie et là, deux solutions :
 * Son IPID vaut 102 (+2) donc le port de la victime était ouvert
 * Son IPID vaut 101 (+1) donc le port de la victime était fermé
-Incapable de savoir si un port est filtered, pas discret car inhabituel, et peu fiable.
+
 ```{r, engine='bash'}
 aas@ubuntu:~$ nmap -P0 -sI ip_zombie:port_zombie ip_victime
 ```
