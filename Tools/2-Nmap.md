@@ -56,7 +56,6 @@ aas@ubuntu:~$ nmap -sP 192.168.0.0/24
 ```
 
 ## VIII. Détection d'OS
-On effectue un ScanPing
 ```{r, engine='bash'}
 aas@ubuntu:~$ nmap -O 192.168.1.20
 ```
