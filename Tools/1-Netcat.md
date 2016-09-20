@@ -21,6 +21,11 @@ aas@ubuntu:~$ rm -f /tmp/f; mkfifo /tmp/f
 aas@ubuntu:~$ cat /tmp/f | /bin/sh -i 2>&1 | nc -l 1234 > /tmp/f
 
 ```
+Sur certaines version, on peut simplement faire (-d lit pas l'entrée standard) :
+```{r, engine='bash'}
+aas@ubuntu:~$ nc -d -L -e /bin/sh -p 2222
+```
+
 Dans un deuxième shell :
 ```{r, engine='bash'}
 aas@ubuntu:~$ nc localhost 1234

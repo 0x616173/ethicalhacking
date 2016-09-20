@@ -78,13 +78,14 @@ aas@ubuntu:~$ nmap -O 192.168.1.20
 ```
 
 ## X. Pour l'attaquant
-* Eviter le scan de masse et choisir stratégiquement des ports (ex. 22, 25, 80, etc)
+* Eviter le scan de masse et choisir stratégiquement des ports (ex. 22, 25, 80, 161, 162 etc)
 * Preferer l'Idle Scan si possible
 * Sinon utiliser -sT pour etre discret
 * Pour tenter de contourner le firewall, utiliser les XMASScan + ACKScan
 
 ## XI. Pour le defenseur
 * Utiliser des sondes IDS/IPS
-* Le firewall doit gérer les XMASScan, NULLScan, etc.
+* Le firewall doit fermer les ports inutiles et gérer les XMASScan, NULLScan, etc.
 * Utiliser des ports différents que ceux communs (exemple : au lieu du port 22, utiliser 2938 pour SSH).
+* Utiliser un service comme fail2ban
 * Empecher le banner grabbing
