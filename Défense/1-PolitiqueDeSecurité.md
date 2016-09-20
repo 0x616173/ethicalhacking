@@ -23,10 +23,11 @@ Bonne gestion des droits
 Puisqu'il est possible de sniffer sur le réseau et récupérer des informations sensible telles que des identifiants ou le contenu de message, il est important d'utiliser le chiffrement. Par exemple, utiliser PGP lors d'envoi de mail est une bonne chose.
 
 ## Mises à jour
-Afin de corriger de potentielles failles de sécurité, mettre continuellement à jour continuellement
+Afin de corriger de potentielles failles de sécurité, mettre continuellement à jour :
 * les OS
 * les programmes
-* les firmwares des équipements
+* les firmwares des équipements  
+
 Ne pas mettre à jour, c'est laisser les portes ouvertes
 
 ## Emprisonner les services
